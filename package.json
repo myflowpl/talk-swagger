@@ -5,7 +5,7 @@
   "angular-cli": {},
   "scripts": {
     "start": "ng serve --proxy-config proxy.conf.json",
-    "swagen-ts": "java -jar ./swagger/swagger-codegen-cli-2.2.2-SNAPSHOT.jar generate -i ./swagger/contracts/busc.json -o src/app/api -l typescript-angular2 && node ./maven/post-ts-generation.js"
+    "swagger": "java -jar ./swagger-codegen-cli-2.2.2-SNAPSHOT.jar generate -i ./swagger-petstore.json -o src/app/api -l typescript-angular2"
   },
   "private": true,
   "dependencies": {
