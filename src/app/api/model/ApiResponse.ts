@@ -12,27 +12,11 @@
 
 import * as models from './models';
 
-export interface Pet {
-    id?: number;
+export interface ApiResponse {
+    code?: number;
 
-    category?: models.Category;
+    type?: string;
 
-    name: string;
+    message?: string;
 
-    photoUrls: Array<string>;
-
-    tags?: Array<models.Tag>;
-
-    /**
-     * pet status in the store
-     */
-    status?: Pet.StatusEnum;
-
-}
-export namespace Pet {
-    export enum StatusEnum {
-        Available = <any> 'available',
-        Pending = <any> 'pending',
-        Sold = <any> 'sold'
-    }
 }

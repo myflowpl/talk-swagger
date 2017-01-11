@@ -12,27 +12,27 @@
 
 import * as models from './models';
 
-export interface Pet {
+export interface Order {
     id?: number;
 
-    category?: models.Category;
+    petId?: number;
 
-    name: string;
+    quantity?: number;
 
-    photoUrls: Array<string>;
-
-    tags?: Array<models.Tag>;
+    shipDate?: Date;
 
     /**
-     * pet status in the store
+     * Order Status
      */
-    status?: Pet.StatusEnum;
+    status?: Order.StatusEnum;
+
+    complete?: boolean;
 
 }
-export namespace Pet {
+export namespace Order {
     export enum StatusEnum {
-        Available = <any> 'available',
-        Pending = <any> 'pending',
-        Sold = <any> 'sold'
+        Placed = <any> 'placed',
+        Approved = <any> 'approved',
+        Delivered = <any> 'delivered'
     }
 }

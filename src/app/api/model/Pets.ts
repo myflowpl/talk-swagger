@@ -12,5 +12,5 @@
 
 import * as models from './models';
 
-export interface Pets extends models.Array<models.Pet> {
+export interface Pets extends Array<models.Pet> {
 }

@@ -27,7 +27,7 @@ import { Configuration }                                     from '../configurat
 
 @Injectable()
 export class PetsApi {
-    protected basePath = '';
+    protected basePath = '/api';
     public defaultHeaders: Headers = new Headers();
     public configuration: Configuration = new Configuration();
 

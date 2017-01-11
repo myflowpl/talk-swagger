@@ -12,27 +12,24 @@
 
 import * as models from './models';
 
-export interface Pet {
+export interface User {
     id?: number;
 
-    category?: models.Category;
+    username?: string;
 
-    name: string;
+    firstName?: string;
 
-    photoUrls: Array<string>;
+    lastName?: string;
 
-    tags?: Array<models.Tag>;
+    email?: string;
+
+    password?: string;
+
+    phone?: string;
 
     /**
-     * pet status in the store
+     * User Status
      */
-    status?: Pet.StatusEnum;
+    userStatus?: number;
 
-}
-export namespace Pet {
-    export enum StatusEnum {
-        Available = <any> 'available',
-        Pending = <any> 'pending',
-        Sold = <any> 'sold'
-    }
 }

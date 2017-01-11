@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Swagger Petstore Items</h1>
+
+<table>
+  <tr *ngFor="let pet of pets">
+    <td>{{pet.name}}</td>
+    <td>{{pet.tag}}</td>
+  </tr>
+</table>
