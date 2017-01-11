@@ -1,15 +1,15 @@
 {
-  "name": "tal-generators",
+  "name": "talk-swagger",
   "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-contrib-watch": "~0.6.1"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
+  "license": "MIT",
+  "angular-cli": {},
   "scripts": {
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "swagen-ts": "java -jar ./swagger/swagger-codegen-cli-2.2.2-SNAPSHOT.jar generate -i ./swagger/contracts/busc.json -o src/app/api -l typescript-angular2 && node ./maven/post-ts-generation.js"
+  },
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
   }
 }

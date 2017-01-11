@@ -1,11 +1,10 @@
-talk-generators
+talk-swagger
 ==============
 
-![Logo](/slides/themes/warsawjs/pictures/logo.png)
-![Logo](/page/angularui.png)
+![Logo](slides/themes/warsawjs/pictures/logo.png)
+![Logo](slides/images/swagger.png)
 
-Do what you love, automate the rest...
-Generators in JavaScript
+Swagger from front-end perspective
 
 ---
 Licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License), see [license page](https://github.com/shower/shower/wiki/MIT-License) for details.
