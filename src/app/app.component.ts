@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {PetsApi} from "./api/api/PetsApi";
-import {Pets} from "./api/model/Pets";
+import {Pet} from "./api/model/Pet";
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,10 @@ import {Pets} from "./api/model/Pets";
 })
 export class AppComponent {
 
-  pets: Pets;
+  pets: Array<Pet>;
 
   constructor(private api:PetsApi){
-    this.api.listPets().subscribe((pets:Pets)=>{
+    this.api.listPets().subscribe((pets:Array<Pet>)=>{
       this.pets = pets;
     })
   }
