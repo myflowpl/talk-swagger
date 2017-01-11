@@ -33,7 +33,7 @@
             <h2>
 
                 Swagger <br>
-                <span>front-end perspective</span>
+                <span>the front-end perspective</span>
             </h2>
 
             <p>
@@ -53,7 +53,7 @@
         <Hr>
         <br>
         <div class="next">
-            <h2>Skils</h2>
+            <h2>Skills</h2>
             <p>
                 JavaScript &nbsp; &nbsp;&&nbsp;&nbsp;
                 NodeJs/PHP&nbsp;&nbsp; & &nbsp;&nbsp;
@@ -87,7 +87,7 @@
         <h2>Agenda</h2>
         <ol>
             <li>Swagger & API contracts</li>
-            <li>Contract first workflow</li>
+            <li>Contract-first development</li>
             <li>Tools</li>
             <li>Swagger + TypeScript + Angular2 example</li>
         </ol>
@@ -98,9 +98,62 @@
 <!-- Swagger & API Contracts -->
 <section class="slide">
     <div>
-        <h2>Swagger & API Contracts</h2>
+        <h2>API Contracts</h2>
         <ul>
-            <li></li>
+            <li>Simple representation of your RESTful API</li>
+            <li class="next">It's good to know the rules</li>
+            <li class="next">Single source of truth</li>
+            <li class="next">Language agnostic</li>
+            <li class="next">Tons of tools</li>
+        </ul>
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Swagger</h2>
+        <ul>
+            <li>Swagger Syntax - Json or Yaml</li>
+            <li>JSON Schema draft v4</li>
+        </ul>
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Endpoint</h2>
+        <img src="images/1-endpoint-example.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Parameters</h2>
+        <img src="images/1-parameters.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Responses</h2>
+        <img src="images/1-res.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Model Definitions</h2>
+        <img src="images/1-model.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>More</h2>
+        <ul>
+            <li>Documentation</li>
+            <li>Plugins</li>
+            <li>Community Tools</li>
         </ul>
 
     </div>
@@ -109,9 +162,13 @@
 <!-- Contract first workflow -->
 <section class="slide">
     <div>
-        <h2>Contract first workflow</h2>
+        <h2>Contract-first Development</h2>
         <ul>
-            <li></li>
+            <li class="next"><b>design + collaborate</b> (swagger-editor, generators)</li>
+            <li class="next"><b>build</b> (codegen, swagger-node, validators, etc.)</li>
+            <li class="next"><b>test</b> (CI, stubs, fake data)</li>
+            <li class="next"><b>documentation</b> (generate from contract)</li>
+            <li class="next"><b>update & refactor</b> (typescript, automated tests)</li>
         </ul>
     </div>
 </section>
@@ -121,17 +178,80 @@
     <div>
         <h2>Tools</h2>
         <ul>
-            <li></li>
+            <li class="next">swagger-editor</li>
+            <li class="next">swagger-js</li>
+            <li class="next">swagger-ui</li>
+            <li class="next">swagger-node</li>
+            <li class="next">swagger-parser</li>
+            <li class="next">swagger-codegen</li>
         </ul>
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>Editor</h2>
+        <img src="images/2-editor.png" alt="" width="100%">
+
+    </div>
+</section>
+
+<section class="slide">
+    <div>
+        <h2>UI</h2>
+        <img src="images/2-ui.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>UI</h2>
+        <img src="images/2-swagger-ui.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>SwaggerJS</h2>
+        <img src="images/2-js.png" alt="" width="100%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Swagger-node</h2>
+        <img src="images/2-node.png" alt="" height="90%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h2>Swagger-codegen</h2>
+        <img src="images/2-gen1.png" alt="" height="85%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h3>Codegen Stubs</h3>
+        <img src="images/2-gen2.png" alt="" height="80%">
+
+    </div>
+</section>
+<section class="slide">
+    <div>
+        <h3>Codegen Documentation</h3>
+        <img src="images/2-gen3.png" alt="" width="50%">
+
     </div>
 </section>
 
 <!-- Example -->
 <section class="slide">
     <div>
-        <h2>Example</h2>
-        <h3>Swagger + TypeScript + Angular2</h3>
-<xmp class="prettyprint linenums ">java -jar
+        <h2>Swagger + TypeScript + Angular2</h2>
+        <h3>Lets generate some code</h3>
+        <xmp class="prettyprint linenums ">java -jar
     swagger-codegen-cli-2.2.2-SNAPSHOT.jar generate
     -i swagger-petstore.json
     -o src/app/api
@@ -158,7 +278,7 @@
 
 <section class="slide coverf">
     <div>
-        <h2>Model file</h2>
+        <h2>Model definition</h2>
         <h3>api/model/Pet.ts</h3>
         <img src="images/5-pet-file.png" alt="" width="100%">
     </div>
