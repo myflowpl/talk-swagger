@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {PetsApi} from "./api/api/PetsApi";
+import {PetApi} from "./api/api/PetApi";
 import {Pet} from "./api/model/Pet";
 
 @Component({
@@ -11,8 +11,8 @@ export class AppComponent {
 
   pets: Array<Pet>;
 
-  constructor(private api:PetsApi){
-    this.api.listPets().subscribe((pets:Array<Pet>)=>{
+  constructor(private api:PetApi){
+    this.api.findPetsByStatus([Pet.StatusEnum.Pending.toString()]).subscribe((pets:Array<Pet>)=>{
       this.pets = pets;
     })
   }
